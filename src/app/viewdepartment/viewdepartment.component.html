@@ -1,0 +1,60 @@
+ <!-- Header --> 
+ <header class="w3-container" style="padding-top:22px;text-align: center">
+    <h5 (click)="use()"><b>View Department</b></h5>
+  </header>
+  <div style="margin-bottom: 20px;margin-left: 18px">
+  <input type="text" name="search" [(ngModel)]="searchit">
+  <button (click)="search()">Search</button>
+  <button routerLink='/admin/createdepartment' style="float: right; margin-right: 17px">Create Department</button>
+  </div>
+  
+  <div class="w3-container" *ngIf = 'department!=null && flag '> 
+      <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+        <tr>
+          <th>Department Code</th>
+          <th>Department Name</th>
+          <th>Actions</th>
+        </tr> 
+        
+        <tr *ngFor = 'let arr of department'>
+          <td>{{arr.departmentcode}}</td>
+          <td>{{arr.departmentname}}</td>
+          <td>
+            <div class=''>
+              <button (click)="modify(arr)" routerLink='/admin/createdepartment'>Modify</button>
+              <button (click)="del(arr[1])">Delete</button>
+            </div>
+          </td>
+        </tr>
+    </table>
+   </div>
+  
+  
+   <div class="w3-container" *ngIf = '!flag'> 
+      <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+          <tr>
+            <th>Department Code</th>
+            <th>Department Name</th>
+          </tr> 
+          
+          <tr *ngFor = 'let arr of department'>
+            <td>{{arr.departmentcode}}</td>
+            <td>{{arr.departmentname}}</td>
+            <td>
+              <div class=''>
+                <button (click)="modify(arr)" routerLink='/admin/createemployee'>Modify</button>
+                <button (click)="del(arr.departmentcode)">Delete</button>
+              </div>
+            </td>
+          </tr>
+      </table>
+   </div>
+  
+  
+  
+   
+  
+   
+  
+  
+   

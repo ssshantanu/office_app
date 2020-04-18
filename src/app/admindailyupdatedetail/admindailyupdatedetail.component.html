@@ -1,0 +1,14 @@
+<header class="w3-container" style="padding-top:22px;text-align: center">
+    <h5><b>View your daily update Detail</b></h5>
+  </header>
+
+
+<div class="w3-container" *ngFor='let arr of filter '>
+  <p>Employee Code : {{arr.employeecode}}</p><br>
+  <p>Date of work :  {{arr.date |date}}</p><br>
+  <p>Date of submission : {{arr.today |date}}</p><br>
+  <p>Department : {{arr.department}}</p><br>
+  <p>Content : {{arr.content}}</p><br>
+  <hr>
+</div>
+ 

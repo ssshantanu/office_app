@@ -1,0 +1,35 @@
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+	<h1 style="text-align:center;">Login Page</h1>
+</div><br><br><br><br>
+
+
+
+<!-- <div style="text-align:center;">
+<h1 style="background-color: white">Login page</h1>
+<header> -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+	<form style="margin-left: 250px">
+
+
+    Username
+    <input [(ngModel)]="model.username" type="text" name="username" required><br><br>
+
+
+	Password
+	<input [(ngModel)]="model.password" type="password" name="password" required><br><br> 
+
+	<small *ngIf="error">Enter a valid username or password</small><br><br>
+
+	<input type="Submit" name="Submit" (click)="validate()">
+
+
+</form></div>
+<!-- </header> -->
+
+
+
+
+
+
+
+

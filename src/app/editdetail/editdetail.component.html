@@ -1,0 +1,36 @@
+<header class="w3-container" style="padding-top:22px">
+  <h5><b>Edit Details</b></h5>
+</header>  
+
+<div style="margin-left: 50px">
+    <form name="myform">
+    User Name<br>
+    <input type="text" name="username" [(ngModel)]="model.username" required><br><br>
+    Password<br>
+    <input type="text" name="password" [(ngModel)]="model.password" required><br><br>
+    First Name<br>
+    <input type="text" name="fname" [(ngModel)]="model.fname" required><br>
+    Last Name<br>
+    <input type="text" name="lname" [(ngModel)]="model.lname" required><br>
+    Email<br>
+    <input type="Email" name="mail" [(ngModel)]="model.mail"><br>
+    Phone Number<br> 
+    <input type="number" name="no" [(ngModel)]="model.no"><br>
+    Date of birth<br>
+    <input type="Date" name="dob" [(ngModel)]="model.dob"><br>
+    
+    Gender<br>
+           <input type="radio" name="gender" value="Male" [(ngModel)]="model.gender">Male<br>
+           <input type="radio" name="gender" value="Female" [(ngModel)]="model.gender">Female<br>
+           <input type="radio" name="gender" value="Other" [(ngModel)]="model.gender">Other<br>
+  
+    <input value="Submit"  type="submit" (click)="validate()"> 
+  </form>
+  </div>
+
+
+
+
+
+
+

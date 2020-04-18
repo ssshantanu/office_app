@@ -1,0 +1,62 @@
+ <!-- Header -->
+ <header class="w3-container" style="padding-top:22px;text-align: center">
+	<h5><b>Create Employee</b></h5>
+  </header>
+ <div style="margin-left: 50px">
+  <form name="myform">
+  	User Name<br>
+	<input type="text" name="username" [(ngModel)]="model.username" required><br><br>
+  	Password<br>
+	<input type="text" name="password" [(ngModel)]="model.password" required><br><br>
+	Employee code<br>
+	<input type="text" name="employeecode" [(ngModel)]="model.employeecode"><br><br>
+	First Name<br>
+	<input type="text" name="fname" [(ngModel)]="model.fname" required><br><br>
+	Last Name<br>
+	<input type="text" name="lname" [(ngModel)]="model.lname" required><br><br>
+	Email<br>
+	<input type="Email" name="mail" [(ngModel)]="model.mail"><br><br>
+	Phone Number<br> 
+	<input type="number" name="no" [(ngModel)]="model.no"><br><br>
+	Date of birth<br>
+	<input type="Date" name="dob" [(ngModel)]="model.dob"><br><br>
+	
+	Gender :<br>
+	       <input type="radio" name="gender" value="Male" [(ngModel)]="model.gender">Male<br>
+	       <input type="radio" name="gender" value="Female" [(ngModel)]="model.gender">Female<br>
+	       <input type="radio" name="gender" value="Other" [(ngModel)]="model.gender">Other<br><br>
+
+
+    Date of Joining<br>
+	<input type="Date" name="doj" [(ngModel)]="model.doj"><br><br>
+
+	Role :<br>
+	<input type="radio" name="role" value="admin" [(ngModel)]="model.role">Admin<br>
+	<input type="radio" name="role" value="employee" [(ngModel)]="model.role">Employee<br><br> 
+
+
+	Department :<br>
+	<select name ="fname" [(ngModel)]='model.department' style="margin: 15px">
+		<option value=''>Department</option>
+		<option value= '{{arr.departmentcode}}' *ngFor='let arr of departments'>{{arr.departmentname}}</option>
+	</select>
+	<br><br>
+
+	
+	<input value="Submit"  type="submit" (click)="validate()"> 
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+	
+
+
+

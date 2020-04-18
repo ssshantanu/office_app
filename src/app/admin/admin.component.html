@@ -1,0 +1,74 @@
+<!-- <div>
+  <nav>
+    <ul>
+      <li style="width: 100%;float: left; margin: 10px"><button>Dashboard</button></li>
+      <li style="width: 100%;float: left;margin: 10px"><button (click)="view()">View Employee</button></li><br>
+      <li style="width: 100%;float: left;margin: 10px"><button (click)="create()">Create Employee</button></li><br>
+    </ul>
+  </nav>
+  
+  <article>
+    <router-outlet></router-outlet>
+  </article>
+</div>
+<footer><h6>hello</h6></footer> -->
+
+
+
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <button class="w3-bar-item w3-right" routerLink='/login'>Logout</button>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    
+    <div class="w3-col s8 w3-bar">
+      <span>Welcome, <strong>Admin</strong></span><br>
+      
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Menu</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <button class="w3-bar-item w3-button w3-padding" routerLink='/admin/dashboard' ><i class="fa fa-dashboard"></i>  Dashboard</button>
+    <button class="w3-bar-item w3-button w3-padding" routerLink='/admin/viewemployee'><i class="fa fa-eye fa-fw"></i>  Employee</button>
+    <button class="w3-bar-item w3-button w3-padding" routerLink='/admin/viewdepartment'><i class="fa fa-users fa-fw"></i>  Department</button><br><br>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+  <!-- Header
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b></b></h5>
+  </header> -->
+
+  <router-outlet></router-outlet>
+ 
+
+  <!-- Footer -->
+  <hr>
+  <footer class="w3-container w3-padding-16 w3-light-grey">
+    <p>Powered by Brain Above</p>
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+
+
+
+
+

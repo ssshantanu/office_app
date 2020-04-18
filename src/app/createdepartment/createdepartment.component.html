@@ -1,0 +1,15 @@
+<header class="w3-container" style="padding-top:22px;text-align: center">
+  <h5><b>Create Department</b></h5>
+</header>
+
+<div style="margin-left: 50px">
+  <form name="myform">
+    Department Id<br>
+    <input type="text" name="id" [(ngModel)]="model.departmentcode"><br><br>
+    Department Name<br>
+    <input type="text" name="fname" [(ngModel)]="model.departmentname" required><br><br>
+
+    <input value="Submit"  type="submit" (click)="validate()"> 
+  
+  </form>
+</div>

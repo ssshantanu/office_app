@@ -1,0 +1,78 @@
+
+<header class="w3-container" style="padding-top:22px;text-align: center">
+	<h5><b>My Dashboard</b></h5>
+</header> 
+
+<div class="w3-row-padding w3-margin-bottom">
+  <div class="w3-quarter" routerLink='/admin/viewemployee'>
+      <div class="w3-container w3-blue w3-padding-16">
+        <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+        <div class="w3-clear"></div>
+        <h4>View Employee</h4>
+      </div>
+  </div>
+
+  <div class="w3-quarter" routerLink='/admin/createemployee'>
+      <div class="w3-container w3-teal w3-padding-16">
+        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+        <div class="w3-clear"></div>
+        <h4>Create Employee</h4>
+      </div>
+  </div>
+
+  <div class="w3-quarter" routerLink='/admin/viewdepartment'>
+      <div class="w3-container w3-red w3-padding-16">
+        <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+        <div class="w3-clear"></div>
+        <h4>View Departments</h4>
+      </div>
+  </div>
+
+  <div class="w3-quarter" routerLink='/admin/createdepartment'>
+      <div class="w3-container w3-orange w3-text-white w3-padding-16">
+        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+        <div class="w3-clear"></div>
+        <h4>Create Department</h4>
+      </div>
+  </div>
+</div><br><br><br><br>
+
+
+<form>
+<select name="department" [(ngModel)]='department' style="margin: 15px">
+  <option value="">Department</option>
+  <option value= '{{arr.departmentcode}}' *ngFor='let arr of departments'>{{arr.departmentname}}</option>
+</select>
+
+<select name ="employeecode" [(ngModel)]='employeecode' style="margin: 15px">
+  <option value=''>Name</option>
+  <option value= '{{arr.employeecode}}' *ngFor='let arr of employee'>{{arr.fname}}</option>
+</select>
+
+<input type="button" value="filter" name="filter" (click)='display(employeecode,department)' style="margin: 15px">
+
+</form>
+
+
+
+<div style="margin: 25px">
+<full-calendar defaultView="dayGridMonth" [plugins]="calendarPlugins" #calendar (dateClick)="handledateclick($event)"
+[events]=calendarEvents (eventClick)="handleeventclick($event)">
+</full-calendar>  
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+

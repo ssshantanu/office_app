@@ -1,0 +1,95 @@
+<header class="w3-container" style="padding-top:22px">
+    <h5><b>My Dashboard</b></h5>
+  </header> 
+ 
+
+  <!-- <div class="w3-row-padding w3-margin-bottom">
+      <div class="w3-quarter">
+        <div class="w3-container w3-red w3-padding-16">
+          <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
+          <div class="w3-right">
+            <h3>52</h3>
+          </div>
+          <div class="w3-clear"></div>
+          <h4>Messages</h4>
+        </div>
+      </div>
+      <div class="w3-quarter">
+        <div class="w3-container w3-blue w3-padding-16">
+          <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+          <div class="w3-right">
+            <h3>99</h3>
+          </div>
+          <div class="w3-clear"></div>
+          <h4>Views</h4>
+        </div>
+      </div>
+      <div class="w3-quarter">
+        <div class="w3-container w3-teal w3-padding-16">
+          <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+          <div class="w3-right">
+            <h3>23</h3>
+          </div>
+          <div class="w3-clear"></div>
+          <h4>Shares</h4>
+        </div>
+      </div>
+      <div class="w3-quarter">
+        <div class="w3-container w3-orange w3-text-white w3-padding-16">
+          <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+          <div class="w3-right">
+            <h3>50</h3>
+          </div>
+          <div class="w3-clear"></div>
+          <h4>Users</h4>
+        </div>
+      </div>
+    </div><br><br> -->
+
+
+<!-- <div class="w3-container">
+ <b><h6>Other Employees in your department</h6></b> 
+        <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+          <tr>
+            <th>Employee Code</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone no</th>
+  
+          </tr> 
+          
+          <tr *ngFor = 'let arr of filteredemp'>
+            <td>{{arr.employeecode}}</td>
+            <td>{{arr.fname}}</td>
+            <td>{{arr.lname}}</td>
+            <td>{{arr.no}}</td>
+          </tr>
+      </table>
+  </div><br> -->
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+<div class="w3-container">
+  <h5>Daily Update</h5>
+</div>
+<div style="background-color: white ">
+<app-ngx-editor [placeholder]="'Enter text here...'" [spellcheck]="true" [(ngModel)]="content" class="text"></app-ngx-editor>
+</div><br><br>
+Select date<br> 
+<input type="date" name='date' [(ngModel)]='no'>
+<br><br>
+<input type="submit" (click)='validate()'>
+<button (click)='update()' style="margin-left: 25px">Update</button><br>
+<small *ngIf="error">Enter some content or a valid date</small><br>
+
+

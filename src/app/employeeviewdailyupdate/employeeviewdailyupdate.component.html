@@ -1,0 +1,15 @@
+<header class="w3-container" style="padding-top:22px;text-align: center">
+    <h5><b>View your daily update</b></h5>
+  </header>
+
+
+<div class="w3-container"> 
+
+<div style="margin: 25px">
+ <full-calendar defaultView="dayGridMonth" [plugins]="calendarPlugins" #calendar (dateClick)="handledateclick($event)"
+ [events]=calendarEvents (eventClick)="handleeventclick($event)">
+ </full-calendar>  
+</div>
+
+</div>
+  

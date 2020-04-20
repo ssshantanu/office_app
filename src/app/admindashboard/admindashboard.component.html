@@ -39,17 +39,17 @@
 
 
 <form>
-<select name="department" [(ngModel)]='department' style="margin: 15px">
-  <option value="">Department</option>
+<select name="departments" [(ngModel)]='dept' style="margin: 15px">
+  <option value='' selected>Department</option>
   <option value= '{{arr.departmentcode}}' *ngFor='let arr of departments'>{{arr.departmentname}}</option>
 </select>
 
-<select name ="employeecode" [(ngModel)]='employeecode' style="margin: 15px">
-  <option value=''>Name</option>
+<select name ="employeecode" [(ngModel)]='code' style="margin: 15px"> 
+  <option value='' selected>Name</option>
   <option value= '{{arr.employeecode}}' *ngFor='let arr of employee'>{{arr.fname}}</option>
 </select>
 
-<input type="button" value="filter" name="filter" (click)='display(employeecode,department)' style="margin: 15px">
+<input type="button" value="filter" name="filter" (click)='display(code,dept)' style="margin: 15px">
 
 </form>
 

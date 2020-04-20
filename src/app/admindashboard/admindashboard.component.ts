@@ -62,9 +62,10 @@ handleeventclick(arg)
 
 display(employeecode:String,department:String)
 {
+  //console.log(this.departments,this.employee,this.employeeupdates);
   this.code =employeecode;
   this.dept=department;
-    console.log(employeecode,department);
+    //console.log(employeecode,department);
     this.calendarEvents =[{ title:"", date: "" , backgroundColor: 'red'}];
     var filteredemployeeupdate = [];
     var filteredemployee=[];

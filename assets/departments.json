@@ -1,0 +1,7 @@
+[
+    {"departmentcode":"D001","departmentname" :"head"},
+    {"departmentcode":"D002","departmentname" :"frontend"},
+    {"departmentcode":"D003","departmentname" :"backend"},
+    {"departmentcode":"D004","departmentname" :"field"},
+    {"departmentcode":"D005","departmentname" :"management"}
+ ]

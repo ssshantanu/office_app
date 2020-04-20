@@ -1,0 +1,11 @@
+[
+    {"username":"admin","password":"admin"  , "employeecode":"E001","fname" :"Shantanu","lname":"Dubey","mail":"ab@gmail.com","no": 7777777771,"dob":null,"gender": "male","doj":"2020-02-20","role":"admin","department":"D001"},
+    {"username":"employee1","password":"employee1", "employeecode":"E002","fname" :"Vivek","lname":"Malviya","mail":"ab@gmail.com","no": 7777777771,"dob":null,"gender": "male","doj":"2020-02-24","role":"employee","department":"D002"},
+    {"username":"employee2","password":"employee2", "employeecode":"E003","fname" :"Ajay","lname":"Dubey","mail":"ab@gmail.com","no": 7777777771,"dob":null,"gender": "male","doj":"2020-02-21","role":"employee","department":"D002"},
+    {"username":"employee3","password":"employee3", "employeecode":"E004", "fname" :"Punit","lname":"Jangid","mail":"ab@gmail.com","no": 7777777771,"dob":null,"gender": "male","doj":"2020-02-26","role":"employee","department":"D003"},
+    {"username":"employee4","password":"employee4", "employeecode":"E005","fname" :"Vatsal","lname":"Dubey","mail":"ab@gmail.com","no": 7777777771,"dob":null,"gender": "male","doj":"2020-02-24","role":"employee","department":"D003"},
+    {"username":"employee5","password":"employee5", "employeecode":"E006","fname" :"Geetika","lname":"Dubey","mail":"ab@gmail.com","no": 7777777771,"dob":null,"gender": "male","doj":"2020-02-24","role":"employee","department":"D004"},
+    {"username":"employee6","password":"employee6", "employeecode":"E007","fname" :"Manish","lname":"Kumar","mail":"ab@gmail.com","no": 7777777771,"dob":null,"gender": "male","doj":"2020-02-24","role":"employee","department":"D005"}
+]
+
+  

@@ -1,0 +1,29 @@
+Hello this project is only the frontend which is developed in angular. so none of the crud operation will work keep that in mind .
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+To make the project run u can go to this link --------------"https://ssshantanu.github.io/office_app/"
+
+To login as admin  here is info-
+
+id - admin
+password - admin
+----------------------------------------------------------------------------------------------
+To login as employee here is info-
+id - employee1
+password - employee1
+
+and other id for employee is made with username employee1-employee6 and id is same as password
+
+---------------------------------------------------------------------------------------------
+
+
+To use this project u should know a little bit about angular and can yourself develop a backend and use this app to get updates from your employess very easily.
+
+Here are some fuctionality of this project :-
+
+-The admin can see the updates of employee and their detail.
+-The admin can create new employee and departments update and delete them.
+-The employee can send their daily update or the work they have done in that day.
+-This app reduces the work stress on the company head or manager and can easily monitor every employee as they can see their updates.
+-Employees can only submit one day late work and it will be displayed in yellow . if they fail to do so their work or update will be dispalyed in red event.    
+
